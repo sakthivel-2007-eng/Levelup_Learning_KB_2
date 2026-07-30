@@ -1,1 +1,177 @@
+site_name: LevelUp Learning Knowledge Base
+site_description: Production Knowledge Base for LevelUp Learning AI Voice Agents
+site_author: Sakthivel
 
+theme:
+  name: material
+  language: en
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - navigation.instant
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Home: index.md
+
+  - AI Agents:
+      - Overview: 01-agents/README.md
+
+      - Agent 1:
+          - Overview: 01-agents/01-agent-1-payment-followup/README.md
+          - Objective: 01-agents/01-agent-1-payment-followup/01-objective.md
+          - Trigger: 01-agents/01-agent-1-payment-followup/02-trigger.md
+          - Conversation Flow: 01-agents/01-agent-1-payment-followup/03-conversation-flow.md
+          - Objection Handling: 01-agents/01-agent-1-payment-followup/04-objection-handling.md
+          - Escalation Rules: 01-agents/01-agent-1-payment-followup/05-escalation-rules.md
+          - Example Conversations: 01-agents/01-agent-1-payment-followup/06-example-conversations.md
+
+      - Agent 2:
+          - Overview: 01-agents/02-agent-2-interview-followup/README.md
+          - Objective: 01-agents/02-agent-2-interview-followup/01-objective.md
+          - Trigger: 01-agents/02-agent-2-interview-followup/02-trigger.md
+          - Conversation Flow: 01-agents/02-agent-2-interview-followup/03-conversation-flow.md
+          - Objection Handling: 01-agents/02-agent-2-interview-followup/04-objection-handling.md
+          - Escalation Rules: 01-agents/02-agent-2-interview-followup/05-escalation-rules.md
+          - Example Conversations: 01-agents/02-agent-2-interview-followup/06-example-conversations.md
+
+  - Workflows:
+      - Overview: 02-workflows/README.md
+      - Agent 1 Event Flow: 02-workflows/01-event-flow-agent-1.md
+      - Agent 2 Event Flow: 02-workflows/02-event-flow-agent-2.md
+      - Trigger Timing: 02-workflows/03-trigger-timing.md
+      - Retry Logic: 02-workflows/04-retry-logic.md
+      - Webhook Payload: 02-workflows/05-webhook-payload.md
+      - Call Behaviour: 02-workflows/06-call-behaviour.md
+
+  - Courses:
+      - Overview: 03-courses/README.md
+
+      - Breakthrough Filmmaking:
+          - Overview: 03-courses/01-breakthrough-filmmaking/README.md
+          - Program Identity: 03-courses/01-breakthrough-filmmaking/01-program-identity.md
+          - Questions & Answers: 03-courses/01-breakthrough-filmmaking/02-questions-and-answers.md
+          - Persona Positioning: 03-courses/01-breakthrough-filmmaking/03-persona-positioning.md
+          - Escalation Triggers: 03-courses/01-breakthrough-filmmaking/04-escalation-triggers.md
+          - Abandoned Lead Script: 03-courses/01-breakthrough-filmmaking/05-abandoned-lead-script.md
+          - Objection Handling: 03-courses/01-breakthrough-filmmaking/06-objection-handling.md
+          - Pricing & Cohorts: 03-courses/01-breakthrough-filmmaking/07-pricing-and-cohorts.md
+          - Voice Agent Example: 03-courses/01-breakthrough-filmmaking/08-voice-agent-example-script.md
+
+      - Forge Creators Residency:
+          - Overview: 03-courses/02-forge-creators-residency/README.md
+          - Program Identity: 03-courses/02-forge-creators-residency/01-program-identity.md
+          - Questions & Answers: 03-courses/02-forge-creators-residency/02-questions-and-answers.md
+          - Persona Positioning: 03-courses/02-forge-creators-residency/03-persona-positioning.md
+          - Escalation Triggers: 03-courses/02-forge-creators-residency/04-escalation-triggers.md
+          - Abandoned Lead Script: 03-courses/02-forge-creators-residency/05-abandoned-lead-script.md
+          - Objection Handling: 03-courses/02-forge-creators-residency/06-objection-handling.md
+          - Pricing & Cohorts: 03-courses/02-forge-creators-residency/07-pricing-and-cohorts.md
+          - Voice Agent Example: 03-courses/02-forge-creators-residency/08-voice-agent-example-script.md
+      - Forge Filmmaking Bootcamp:
+          - Overview: 03-courses/03-forge-filmmaking-bootcamp/README.md
+          - Program Identity: 03-courses/03-forge-filmmaking-bootcamp/01-program-identity.md
+          - Questions & Answers: 03-courses/03-forge-filmmaking-bootcamp/02-questions-and-answers.md
+          - Persona Positioning: 03-courses/03-forge-filmmaking-bootcamp/03-persona-positioning.md
+          - Escalation Triggers: 03-courses/03-forge-filmmaking-bootcamp/04-escalation-triggers.md
+          - Abandoned Lead Script: 03-courses/03-forge-filmmaking-bootcamp/05-abandoned-lead-script.md
+          - Objection Handling: 03-courses/03-forge-filmmaking-bootcamp/06-objection-handling.md
+          - Pricing & Cohorts: 03-courses/03-forge-filmmaking-bootcamp/07-pricing-and-cohorts.md
+          - Voice Agent Example: 03-courses/03-forge-filmmaking-bootcamp/08-voice-agent-example-script.md
+
+      - Forge Writing Retreat:
+          - Overview: 03-courses/04-forge-writing-retreat/README.md
+          - Program Identity: 03-courses/04-forge-writing-retreat/01-program-identity.md
+          - Questions & Answers: 03-courses/04-forge-writing-retreat/02-questions-and-answers.md
+          - Persona Positioning: 03-courses/04-forge-writing-retreat/03-persona-positioning.md
+          - Escalation Triggers: 03-courses/04-forge-writing-retreat/04-escalation-triggers.md
+          - Abandoned Lead Script: 03-courses/04-forge-writing-retreat/05-abandoned-lead-script.md
+          - Objection Handling: 03-courses/04-forge-writing-retreat/06-objection-handling.md
+          - Pricing & Cohorts: 03-courses/04-forge-writing-retreat/07-pricing-and-cohorts.md
+          - Voice Agent Example: 03-courses/04-forge-writing-retreat/08-voice-agent-example-script.md
+
+      - Video Editing Academy:
+          - Overview: 03-courses/05-video-editing-academy/README.md
+          - Program Identity: 03-courses/05-video-editing-academy/01-program-identity.md
+          - Questions & Answers: 03-courses/05-video-editing-academy/02-questions-and-answers.md
+          - Persona Positioning: 03-courses/05-video-editing-academy/03-persona-positioning.md
+          - Escalation Triggers: 03-courses/05-video-editing-academy/04-escalation-triggers.md
+          - Abandoned Lead Script: 03-courses/05-video-editing-academy/05-abandoned-lead-script.md
+          - Objection Handling: 03-courses/05-video-editing-academy/06-objection-handling.md
+          - Pricing & Cohorts: 03-courses/05-video-editing-academy/07-pricing-and-cohorts.md
+          - Voice Agent Example: 03-courses/05-video-editing-academy/08-voice-agent-example-script.md
+
+  - Prompts:
+      - Overview: 04-prompts/README.md
+      - Greetings: 04-prompts/01-greetings.md
+      - Conversation Style: 04-prompts/02-conversation-style.md
+      - Response Rules: 04-prompts/03-response-rules.md
+      - Escalation Policy: 04-prompts/04-escalation-policy.md
+      - Retrieval Rules: 04-prompts/05-retrieval-rules.md
+      - Agent Behaviour: 04-prompts/06-agent-behaviour.md
+      - Do's and Don'ts: 04-prompts/07-dos-and-donts.md
+      - Fallback Responses: 04-prompts/08-fallback-responses.md
+      - General FAQ: 04-prompts/09-faq-general.md
+
+  - Reference:
+      - Overview: 05-reference/README.md
+      - Course Mapping: 05-reference/01-course-mapping.md
+      - Webhook Events: 05-reference/02-webhook-events.md
+      - CRM Fields: 05-reference/03-crm-fields.md
+      - API Reference: 05-reference/04-api-reference.md
+      - Status Codes: 05-reference/05-status-codes.md
+      - Terminology: 05-reference/06-terminology.md
+      - File Structure: 05-reference/07-file-structure.md
+      - Integrations: 05-reference/08-integrations.md
+      - Version History: 05-reference/09-version-history.md
+
+  - Operations:
+      - Overview: 06-operations/README.md
+      - Deployment Guide: 06-operations/01-deployment-guide.md
+      - Testing Checklist: 06-operations/02-testing-checklist.md
+      - Monitoring: 06-operations/03-monitoring.md
+      - Troubleshooting: 06-operations/04-troubleshooting.md
+      - Backup & Recovery: 06-operations/05-backup-and-recovery.md
+      - Security Guidelines: 06-operations/06-security-guidelines.md
+      - Maintenance: 06-operations/07-maintenance.md
